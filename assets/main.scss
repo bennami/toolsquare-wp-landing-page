@@ -1,0 +1,147 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+//this removes border around hamburger icon in navbar
+.navbar-light .navbar-toggler {
+  border-color:transparent;
+
+}
+
+.collapse .show{
+  background-color: rgba(10,0,0,0.5) !important;
+}
+
+// on scroll give navbar a bg color
+.bg-not-transparent{
+  background-color: rgba(10,0,0,0.5) !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255,1);
+}
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
+}
+
+
+.navbar-inner {
+  background:transparent;
+}
+
+
+//hero img
+.jumbotron{
+  background: url("./img/heroImg.png") no-repeat  center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+  border-radius: 0;
+}
+.navbar-nav a{
+  color: whitesmoke;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+
+.jumbotron{
+  h1{
+    font-size: 4rem;
+    font-family: Avenir,sans-serif;
+  }
+}
+
+footer{
+  //position: absolute;
+  //bottom: 0;
+  //width: 100vw;
+  background-color: #e8e8e8;
+  a{
+    color: #1b1e21;
+  }
+  a:hover{
+    color: #1b1e21;
+  }
+  img{
+    width: 30vh;
+  }
+}
+
+
+//carousel
+
+.carousel{
+  margin: 50px auto;
+  padding: 0 70px;
+}
+.carousel-item{
+  color: #999;
+  font-size: 14px;
+  overflow: hidden;
+  text-align: center;
+  min-height: 290px;
+
+}
+.testimonial{
+  font-weight: bold;
+  color: black;
+}
+.carousel .item .img-box{
+  width: 135px;
+  height: 135px;
+  padding: 5px;
+  margin:0 auto;
+img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+}
+
+.carousel-control{
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  top: 50%;
+  background: none;
+  i{
+    font-size: 68px;
+    line-height: 42px;
+    position: absolute;
+    display: inline-block;
+    color: #1b1e21;
+
+  }
+}
+
+.carousel{
+  .carousel-indicators{
+    bottom: -40px;
+    li, li .active{
+      width:10px;
+      height: 10px;
+      margin:1px 3px ;
+      border-radius: 50%;
+
+    }
+    li{
+      background: #5a6268;
+    }
+
+  }
+}
+
+.input{
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
