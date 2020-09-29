@@ -10068,5 +10068,15 @@ footer img {
     padding: 4rem;
   }
 }
+.section-container a {
+  color: #E73F49;
+  padding-bottom: 2px;
+}
+.section-container a:hover {
+  color: #E73F49;
+  text-decoration: none;
+  border-bottom: 1px solid #E73F49;
+  padding-bottom: 2px;
+}
 
 /*# sourceMappingURL=main.css.map */
