@@ -10067,6 +10067,10 @@ footer img {
   .vision-section {
     padding: 4rem;
   }
+
+  .jumbotron img {
+    width: 50vw;
+  }
 }
 .section-container a {
   color: #E73F49;
@@ -10077,6 +10081,10 @@ footer img {
   text-decoration: none;
   border-bottom: 1px solid #E73F49;
   padding-bottom: 2px;
+}
+
+footer p a:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

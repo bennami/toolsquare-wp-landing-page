@@ -172,6 +172,12 @@ footer{
   .vision-section{
     padding: 4rem;
   }
+
+  .jumbotron{
+    img{
+      width: 50vw;
+    }
+  }
 }
 
 .section-container{
@@ -186,3 +192,15 @@ footer{
     padding-bottom: 2px;
   }
 }
+
+
+//footer
+footer{
+  p{
+    a:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+//back to top button
