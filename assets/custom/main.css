@@ -9899,6 +9899,10 @@ h3 {
   border-color: #E73F49;
 }
 
+* {
+  font-family: Avenir, Futura, sans-serif;
+}
+
 .navbar-light .navbar-toggler {
   border-color: transparent;
 }
@@ -10068,7 +10072,7 @@ footer img {
     padding: 4rem;
   }
 
-  .jumbotron img {
+  .jumbotron .square {
     width: 50vw;
   }
 }

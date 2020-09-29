@@ -1,13 +1,15 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 $company-red: #E73F49;
-$red:     $company-red !default;
+$red: $company-red !default;
 .btn-danger {
   color: #fff;
   background-color: $company-red;
   border-color: $company-red;
 }
-
+*{
+  font-family: Avenir,Futura, sans-serif;
+}
 //this removes border around hamburger icon in navbar
 .navbar-light .navbar-toggler {
   border-color:transparent;
@@ -174,7 +176,7 @@ footer{
   }
 
   .jumbotron{
-    img{
+    .square{
       width: 50vw;
     }
   }
