@@ -9893,8 +9893,18 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.btn-danger {
+  color: #fff;
+  background-color: #E73F49;
+  border-color: #E73F49;
+}
+
 .navbar-light .navbar-toggler {
   border-color: transparent;
+}
+
+.navbar-brand {
+  visibility: hidden;
 }
 
 .btn:focus, a:focus {
@@ -9906,12 +9916,8 @@ h3 {
   box-shadow: none;
 }
 
-.collapse .show {
-  background-color: rgba(10, 0, 0, 0.5) !important;
-}
-
 .bg-not-transparent {
-  background-color: rgba(10, 0, 0, 0.5) !important;
+  background-color: rgba(10, 0, 0, 0.8) !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -9927,8 +9933,25 @@ h3 {
   background: transparent;
 }
 
+.navbar-nav a {
+  color: whitesmoke;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
+.show-brand {
+  visibility: visible;
+}
+
 .jumbotron {
-  background: url("./img/heroImg.png") no-repeat center;
+  background: url("../img/heroImg.png") no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9941,32 +9964,10 @@ h3 {
   color: whitesmoke;
   border-radius: 0;
 }
-
-.navbar-nav a {
-  color: whitesmoke;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 1rem;
-  padding-left: 0.5rem;
-}
-
 .jumbotron h1 {
-  font-size: 4rem;
+  Font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  font-weight: 500;
   font-family: Avenir, sans-serif;
-}
-
-footer {
-  background-color: #e8e8e8;
-}
-footer a {
-  color: #1b1e21;
-}
-footer a:hover {
-  color: #1b1e21;
-}
-footer img {
-  width: 30vh;
 }
 
 .carousel {
@@ -10000,14 +10001,15 @@ footer img {
 }
 
 .carousel-control {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-top: -20px;
   top: 50%;
   background: none;
+  padding: 2rem;
 }
 .carousel-control i {
-  font-size: 68px;
+  font-size: 40px;
   line-height: 42px;
   position: absolute;
   display: inline-block;
@@ -10027,17 +10029,44 @@ footer img {
   background: #5a6268;
 }
 
+.card {
+  border: none;
+}
+
 .input {
   border: none;
   border-bottom: 1px solid gray;
 }
 
-.vision {
+footer {
+  background-color: #e8e8e8;
+}
+footer a {
+  color: #1b1e21;
+}
+footer a:hover {
+  color: #1b1e21;
+}
+footer img {
+  width: 30vh;
+}
+
+.vision-section {
   background-color: #E73F49;
   width: 100vw;
   margin: 0;
   padding: 4rem 8rem 4rem 8rem;
   color: whitesmoke;
+}
+
+.social-icon {
+  padding-right: 0.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .vision-section {
+    padding: 4rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

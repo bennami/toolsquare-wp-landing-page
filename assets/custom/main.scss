@@ -1,10 +1,19 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 $company-red: #E73F49;
+$red:     $company-red !default;
+.btn-danger {
+  color: #fff;
+  background-color: $company-red;
+  border-color: $company-red;
+}
+
 //this removes border around hamburger icon in navbar
 .navbar-light .navbar-toggler {
   border-color:transparent;
-
+}
+.navbar-brand{
+  visibility: hidden;
 }
 .btn:focus, a:focus
 {
@@ -16,16 +25,9 @@ $company-red: #E73F49;
   box-shadow: none;
 }
 
-
-
-
-.collapse .show{
-  background-color: rgba(10,0,0,0.5) !important;
-}
-
 // on scroll give navbar a bg color
 .bg-not-transparent{
-  background-color: rgba(10,0,0,0.5) !important;
+  background-color: rgba(10,0,0,0.8) !important;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255,1);
@@ -34,16 +36,26 @@ $company-red: #E73F49;
   color: rgba(255, 255, 255, 0);
   border-color: rgba(255, 255, 255, 0);
 }
-
-
 .navbar-inner {
   background:transparent;
 }
+.navbar-nav a{
+  color: whitesmoke;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+.bg-light {
+  background-color: white !important;
+}
+.show-brand{
+  visibility: visible;
+}
 
-
-//hero img
+//hero image section
 .jumbotron{
-  background: url("./img/heroImg.png") no-repeat  center;
+  background: url("../img/heroImg.png") no-repeat  center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -55,42 +67,14 @@ $company-red: #E73F49;
   align-items: center;
   color: whitesmoke;
   border-radius: 0;
-}
-.navbar-nav a{
-  color: whitesmoke;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 1rem;
-  padding-left: 0.5rem;
-}
-
-.jumbotron{
   h1{
-    font-size: 4rem;
+    Font-size: clamp(3rem, calc(5vw + 1rem) , 4.5rem);
+    font-weight:500;
     font-family: Avenir,sans-serif;
   }
 }
 
-footer{
-  //position: absolute;
-  //bottom: 0;
-  //width: 100vw;
-  background-color: #e8e8e8;
-  a{
-    color: #1b1e21;
-  }
-  a:hover{
-    color: #1b1e21;
-  }
-  img{
-    width: 30vh;
-  }
-}
-
-
 //carousel
-
 .carousel{
   margin: 50px auto;
   padding: 0 70px;
@@ -112,26 +96,26 @@ footer{
   height: 135px;
   padding: 5px;
   margin:0 auto;
-img{
-  width: 100%;
-  height: 100%;
-  display: block;
-}
+  img{
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 }
 
 .carousel-control{
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-top: -20px;
   top: 50%;
   background: none;
+  padding: 2rem;
   i{
-    font-size: 68px;
+    font-size: 40px;
     line-height: 42px;
     position: absolute;
     display: inline-block;
     color: #1b1e21;
-
   }
 }
 
@@ -143,7 +127,6 @@ img{
       height: 10px;
       margin:1px 3px ;
       border-radius: 50%;
-
     }
     li{
       background: #5a6268;
@@ -152,19 +135,41 @@ img{
   }
 }
 
+.card {
+  border: none;
+}
+
 .input{
   border: none;
   border-bottom: 1px solid gray;
 }
 
+footer{
+  background-color: #e8e8e8;
+  a{
+    color: #1b1e21;
+  }
+  a:hover{
+    color: #1b1e21;
+  }
+  img{
+    width: 30vh;
+  }
+}
 
-.vision{
+.vision-section{
   background-color: $company-red;
   width: 100vw;
   margin: 0;
   padding: 4rem 8rem 4rem 8rem;
   color: whitesmoke;
 }
+.social-icon{
+  padding-right: 0.5rem;
+}
 
-
-
+@media only screen and (max-width: 800px) {
+  .vision-section{
+    padding: 4rem;
+  }
+}

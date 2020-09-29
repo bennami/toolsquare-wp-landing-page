@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Solutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/custom/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
-    <a class="navbar-brand js-scroll-trigger" href="#"><img width="100" src="assets/img/logo.png" alt=""></a>
+    <a class="navbar-brand js-scroll-trigger" href="index.html"><img width="100" src="assets/img/logo.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -17,13 +17,13 @@
     <div class=" collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav justify-content-end ">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="aboutUs.html">About us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="#">Our solutions</a>
+                <a class="nav-link " href="solutions.html">Our solutions</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">News</a>
@@ -32,7 +32,7 @@
                 <a class="nav-link" href="#">Community</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </li>
 
         </ul>
@@ -59,11 +59,10 @@
     <div class="container p-5">
         <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2 mb-4">
-                <h2>Toolsquare units</h2>
-                <p>Our MCUs are easy to install and run a very intuitive software that is flexible to suit your lab’s needs.
+                <h2>An easy to manage platform</h2>
+                <p>The platform allows you to customise settings, such as access rights, opening hours and machine parameters.
                 </p>
-                <p>
-                    We include the option to manage check lists and feedback rounds to asess that the machines are in a good state before the user can start using the machine.</p>
+                <p>It also informs lab management about possible workshop problems, workplace statistics and cost breakdown.</p>
             </div>
             <div class="col-lg-6 order-lg-1 mb-4">
                 <img  class="img-fluid" src="./assets/img/monitor.png" alt="">
@@ -72,12 +71,46 @@
     </div>
 </section>
 <section>
+    <div class="container justify-content-center">
+        <div class="row   justify-content-center ">
+            <div class="col-lg-6 col-md-6 d-flex p-4">
+                <img src="assets/img/data.svg" alt="" class="mr-5">
+                <div> <h3>Track machine usage</h3>
+                    <p>Some text about the key feature</p>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-md-6 d-flex p-4">
+                <img src="assets/img/todo.svg" alt=""  class="mr-5">
+                <div> <h3>Access management</h3>
+                    <p>Some text about the key feature</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 d-flex p-4">
+                <img src="assets/img/gears.svg" alt=""  class="mr-5">
+                <div> <h3>Reduce tedious admistration tasks</h3>
+                    <p>Some text about the key feature</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 d-flex p-4">
+                <img src="assets/img/saveMoney.svg" alt=""  class="mr-5">
+                <div> <h3>Reduce costs</h3>
+                    <p>Some text about the key feature</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--contact-->
+<section id="contact">
     <div class="container p-5">
         <div class="row align-items-center">
             <div class="col-lg-6 order-lg-1 mb-4">
                 <h2>Work wit us</h2>
                 <form action="">
-
                     <input class="input my-3 input-group" placeholder="Name" type="text">
                     <input class="input my-3 input-group" placeholder="email" type="text">
                     <input type="text" class="input my-3 input-group" placeholder="Message" type="text">
@@ -90,7 +123,7 @@
         </div>
     </div>
 </section>
-<footer class="page-footer footer font-small unique-color-dark pt-2">
+<footer class="page-footer font-small unique-color-dark pt-2">
 
     <!-- Footer Links -->
     <div class="container text-center text-md-left mt-5 ">
@@ -103,39 +136,42 @@
                 <h6 class="text-uppercase font-weight-bold"></h6>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>
-                    <a href="#!">About us</a>
+                    <a href="aboutUs.html">About us</a>
                 </p>
                 <p>
-                    <a href="#!">Our Solutions</a>
+                    <a href="solutions.html">Our Solutions</a>
                 </p>
                 <p>
                     <a href="#!">News</a>
                 </p>
                 <p>
-                    <a href="#!">Contact</a>
+                    <a href="#contact">Contact</a>
                 </p>
 
             </div>
 
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 justify-content-end">
+            <div class="col-md-3 flex-column d-flex justify-content-end col-lg-2 col-xl-2 mx-auto mb-4 justify-content-end">
 
                 <!-- Links -->
-                <img src="assets/img/logo.png" class="img-fluid " alt="toolsquare-logo">
+                <img src="assets/img/logo.png" class="img-fluid mx-auto" alt="toolsquare-logo">
 
                 <div class="footer-copyright text-center py-3 text-muted" style="font-size: 0.8em">© 2020 Copyright<a class="text-muted" href="https://mdbootstrap.com/"> toolsquare.io</a>
                 </div>
             </div>
 
-            <!-- Grid column -->
+            <!-- Grid column stay in touch-->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
                 <!-- Links -->
                 <h6 class="text-uppercase font-weight-bold">Stay in touch</h6>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                <p ><a class="social-icon" href="" target="_blank noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a class="social-icon"  href="" target="_blank noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="social-icon"  href="" target="_blank noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a></p>
+
                 <p> Generaal Drubbelstraat 32<br/>2600 Antwerp, Belgium.</p>
                 <p>team@toolsquare.io</p>
-                <p></i>+32 485 606 457</p>
+                <p><i style="padding-right: 0.5rem; align-items: center" class="fa fa-phone" aria-hidden="true"></i>+32 485 606 457</p>
             </div>
 
         </div>
