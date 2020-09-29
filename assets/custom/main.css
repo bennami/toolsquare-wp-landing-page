@@ -9970,8 +9970,14 @@ h3 {
 }
 .jumbotron h1 {
   Font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
-  font-weight: 500;
+  font-weight: 600;
   font-family: Avenir, sans-serif;
+}
+.jumbotron p {
+  font-size: 2em;
+}
+.jumbotron .square {
+  width: 20vw;
 }
 
 .carousel {
@@ -10073,7 +10079,10 @@ footer img {
   }
 
   .jumbotron .square {
-    width: 50vw;
+    width: 30vw;
+  }
+  .jumbotron p {
+    font-size: 1.3em;
   }
 }
 .section-container a {

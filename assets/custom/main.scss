@@ -71,8 +71,14 @@ $red: $company-red !default;
   border-radius: 0;
   h1{
     Font-size: clamp(3rem, calc(5vw + 1rem) , 4.5rem);
-    font-weight:500;
+    font-weight:600;
     font-family: Avenir,sans-serif;
+  }
+  p{
+    font-size: 2em;
+  }
+  .square{
+    width: 20vw;
   }
 }
 
@@ -177,7 +183,10 @@ footer{
 
   .jumbotron{
     .square{
-      width: 50vw;
+      width: 30vw;
+    }
+    p{
+      font-size: 1.3em;
     }
   }
 }
