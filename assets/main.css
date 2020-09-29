@@ -9897,6 +9897,15 @@ h3 {
   border-color: transparent;
 }
 
+.btn:focus, a:focus {
+  outline: none;
+}
+
+.navbar-toggler:focus, input:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
 .collapse .show {
   background-color: rgba(10, 0, 0, 0.5) !important;
 }
@@ -10021,6 +10030,14 @@ footer img {
 .input {
   border: none;
   border-bottom: 1px solid gray;
+}
+
+.vision {
+  background-color: #E73F49;
+  width: 100vw;
+  margin: 0;
+  padding: 4rem 8rem 4rem 8rem;
+  color: whitesmoke;
 }
 
 /*# sourceMappingURL=main.css.map */

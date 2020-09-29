@@ -1,11 +1,23 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-
+$company-red: #E73F49;
 //this removes border around hamburger icon in navbar
 .navbar-light .navbar-toggler {
   border-color:transparent;
 
 }
+.btn:focus, a:focus
+{
+  outline: none;
+}
+.navbar-toggler:focus, input:focus
+{
+  outline: none !important;
+  box-shadow: none;
+}
+
+
+
 
 .collapse .show{
   background-color: rgba(10,0,0,0.5) !important;
@@ -144,4 +156,15 @@ img{
   border: none;
   border-bottom: 1px solid gray;
 }
+
+
+.vision{
+  background-color: $company-red;
+  width: 100vw;
+  margin: 0;
+  padding: 4rem 8rem 4rem 8rem;
+  color: whitesmoke;
+}
+
+
 
